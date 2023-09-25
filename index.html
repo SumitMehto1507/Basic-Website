@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MySuperCar.Com</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css" />
+
+  <style>
+    body {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      background-color: rgb(221, 219, 191);
+    }
+
+    .mycenter {
+      font-weight: bold;
+      display: flex;
+      margin: auto;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .myh1car {
+      text-decoration: overline;
+      margin: 100px 1px;
+    }
+
+    #myform {
+      background-image: url("https://images.unsplash.com/photo-1682685795463-0674c065f315?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 160px;
+      opacity: 0.8;
+    }
+
+    .myform1 {
+      color: white;
+      padding-bottom: 180px;
+      padding-left: 120px;
+      padding-right: 120px;
+    }
+
+    .book {
+      z-index: 1;
+      color: rgb(255, 255, 255);
+      font-size: 4rem;
+      font-family: sans-serif;
+      font-weight: bolder;
+    }
+
+    footer {
+      font-size: 1.2rem;
+      font-weight: bolder;
+    }
+
+    .mybold {
+      padding: 20px;
+      font-weight: 900;
+      font-size: 2.4rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: red;" href="#">MySuperCar.Com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong>Just Lunched!!</strong></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              What's New In House
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Buy SuperCar</a></li>
+              <li><a class="dropdown-item" href="#">Sell SuperCar</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Our Collection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Offcial Store (Coming Soon)</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="You-deserve-every-toy-you-want-Desktop-1600x900.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>You Deserve Every Toy You Want</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Ground-Shaker-Desktop-1600x900_v2.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ground Shaker</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Ominous-Desktop-1600x900.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ominous</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="my3coin">
+    <h1 class="myh1car mycenter">Your Dream Car Is Just One Step Away</h1>
+  </div>
+  <div class="mycontainer">
+    <div class="mytopic-1">
+      <h2 class="mycenter mybold">The Art Of Perfomance</h2>
+      <p class="mycenter">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus et
+        placeat harum. Quasi voluptatem reprehenderit voluptate eius,
+        reiciendis officia quisquam nobis laborum, tempora odio minus, natus
+        consectetur corporis porro distinctio! Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Sit voluptatum obcaecati, maxime sed
+        natus temporibus id aliquam illo eius molestias, voluptatem dicta sint
+        asperiores omnis autem officiis, nihil ea aspernatur! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Hic dignissimos esse
+        accusantium, velit, exercitationem vero id iusto voluptates quidem
+        inventore commodi ullam accusamus, itaque deleniti voluptatibus
+        quaerat blanditiis ipsum distinctio.
+      </p>
+    </div>
+    <div class="mytopic-2">
+      <h2 class="mycenter mybold">Book your Appointment Now</h2>
+      <p class="mycenter">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus et
+        placeat harum. Quasi voluptatem reprehenderit voluptate eius,
+        reiciendis officia quisquam nobis laborum, tempora odio minus, natus
+        consectetur corporis porro distinctio! Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Sit voluptatum obcaecati, maxime sed
+        natus temporibus id aliquam illo eius molestias, voluptatem dicta sint
+        asperiores omnis autem officiis, nihil ea aspernatur! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Hic dignissimos esse
+        accusantium, velit, exercitationem vero id iusto voluptates quidem
+        inventore commodi ullam accusamus, itaque deleniti voluptatibus
+        quaerat blanditiis ipsum distinctio.
+      </p>
+    </div>
+  </div>
+  <div class="my3coin">
+    <h1 class="myh1car mycenter">Your Dream Car Is Just One Step Away</h1>
+  </div>
+
+  <div id="myform">
+    <h1 class="book mycenter">Contact Us</h1>
+    <form class="myform1">
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+        <div id="emailHelp" class="form-text text-light">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Contact No.</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">City</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">For Bussiness Query</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+<footer class="mycenter">MySuperCar.Com | All Rights Recived &copy</footer>
+<script src="db.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</html>
